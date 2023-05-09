@@ -76,7 +76,7 @@ const findTags = () => {
                 data = data.replace(`{{${tagsArray[index]}}}`, component);
             })
         }).then(()=>{
-            const writeTextStream = fs.createWriteStream(path.resolve(__dirname, 'project-dist', 'template.html'));
+            const writeTextStream = fs.createWriteStream(path.resolve(__dirname, 'project-dist', 'index.html'));
             writeTextStream.write(data);
         })
     })}
